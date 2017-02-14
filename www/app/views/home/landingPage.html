@@ -1,0 +1,24 @@
+<ion-view id="loginview" ng-controller="landingPageCtrl as vm">
+	<ion-content class="has-header" scroll="false">
+		<div><center>login abc</center></div>
+		<div style="background-color: transparent" class="list list-inset">
+			<label style="margin-top: 20px" class="item item-input">
+				<input id="loginusername" type="text" placeholder="username" required="required" ng-model="vm.logindata.username" ng-keypress="vm.loginonkeypress($event)">
+			</label>
+		</div>
+		<div class="list list-inset" style="background-color: transparent;margin-bottom: 0px">
+			<label class="item item-input">
+				<input id="loginpwd" type="password" placeholder="password" required="required" ng-model="vm.logindata.password" ng-keypress="vm.loginonkeypress($event)">
+			</label>
+			<br>
+		</div>
+		<div class="row">
+			<div class="col">
+				<button id="" class="button button-block button-balanced" style="margin:5px 0px 5px 0px" ng-click="vm.login();">login</button>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>  
+<!-- <ion-side-menus ng-controller="landingPageCtrl as vm">
+<ion-nav-view name="menuContent"></ion-nav-view>
+</ion-side-menus> -->

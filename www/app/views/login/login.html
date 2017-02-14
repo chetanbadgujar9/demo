@@ -1,0 +1,15 @@
+<ion-view id="loginView">
+	<ion-content class="has-header" scroll="false">
+		<div><center>Login1</center></div>
+		<div style="background-color: transparent" class="list list-inset">
+			<label style="margin-top: 20px" class="item item-input">
+				<input id="loginUserName" type="text" placeholder="Username" required="required" ng-model="vm.loginData.userName" ng-keypress="vm.loginOnKeyPress($event)">
+			</label>
+		</div>
+		<div class="list list-inset" style="background-color: transparent;margin-bottom: 0px">
+			<label class="item item-input"><input id="loginPwd" type="password" placeholder="Password" required="required" ng-model="vm.loginData.password" ng-keypress="vm.loginOnKeyPress($event)">
+			</label>
+			<br>
+		</div>
+	</ion-content>
+</ion-view>
